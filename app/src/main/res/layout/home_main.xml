@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.facebook.app.home.HomeActivity">
 
+    <!--검색 레이아웃-->
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <!-- 검색 아이콘 -->
+        <ImageView
+            android:id="@+id/imageView_search_icon"
+            android:layout_width="@dimen/imageView_search_icon_width"
+            android:layout_height="@dimen/imageView_search_icon_height"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!-- 검색 창 -->
+        <EditText
+            android:id="@+id/editText_search"
+            android:layout_width="@dimen/editText_search_width"
+            android:layout_height="@dimen/editText_search_height"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:hint="Search"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.111"
+            app:layout_constraintStart_toEndOf="@+id/imageView_search_icon"
+            app:layout_constraintTop_toTopOf="parent" />
 
+    </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+    <!-- 메인 레이아웃 -->
+    <FrameLayout
+        android:id="@+id/fragment_totalarea"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </FrameLayout>
+
+</LinearLayout>

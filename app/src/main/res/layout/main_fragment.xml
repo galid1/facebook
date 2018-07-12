@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!-- 메뉴 바 레이아웃 -->
+    <GridLayout
+        android:id="@+id/gridLayout_menubar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gridLayout_menubar_height"
+        android:orientation="horizontal"
+        android:columnCount="4"
+        android:rowCount="1"
+
+        >
+
+        <!-- 뉴스피드 아이콘 -->
+        <ImageView
+            android:id="@+id/imageView_menu_newsfeed_icon"
+            android:src="@drawable/ic_search"
+            android:layout_width="@dimen/imageView_menu_icon_width"
+            android:layout_height="@dimen/imageView_menu_icon_height"
+            android:layout_marginTop="@dimen/imageView_menu_icon_marginTop"
+            android:layout_marginLeft="@dimen/imageView_menu_icon_marginLeft"
+            android:layout_marginRight="@dimen/imageView_menu_icon_marginRight"
+            />
+
+        <!-- 친구목록 아이콘 -->
+        <ImageView
+            android:id="@+id/imageView_menu_friendsList_icon"
+            android:src="@drawable/ic_search"
+            android:layout_width="@dimen/imageView_menu_icon_width"
+            android:layout_height="@dimen/imageView_menu_icon_height"
+            android:layout_marginTop="@dimen/imageView_menu_icon_marginTop"
+            android:layout_marginLeft="@dimen/imageView_menu_icon_marginLeft"
+            android:layout_marginRight="@dimen/imageView_menu_icon_marginRight"
+            />
+
+        <!-- 알림 아이콘 -->
+        <ImageView
+            android:id="@+id/imageView_menu_notice_icon"
+            android:src="@drawable/ic_search"
+            android:layout_width="@dimen/imageView_menu_icon_width"
+            android:layout_height="@dimen/imageView_menu_icon_height"
+            android:layout_marginTop="@dimen/imageView_menu_icon_marginTop"
+            android:layout_marginLeft="@dimen/imageView_menu_icon_marginLeft"
+            android:layout_marginRight="@dimen/imageView_menu_icon_marginRight"
+            />
+
+        <!-- 활동로그 아이콘 -->
+        <ImageView
+            android:id="@+id/imageView_menu_activityLog_icon"
+            android:src="@drawable/ic_search"
+            android:layout_width="@dimen/imageView_menu_icon_width"
+            android:layout_height="@dimen/imageView_menu_icon_height"
+            android:layout_marginTop="@dimen/imageView_menu_icon_marginTop"
+            android:layout_marginLeft="@dimen/imageView_menu_icon_marginLeft"
+            android:layout_marginRight="@dimen/imageView_menu_icon_marginRight"
+            />
+
+    </GridLayout>
+
+    <!-- 메뉴에 따른 뷰 영역 -->
+    <FrameLayout
+        android:id="@+id/frameLayout_eachmenuView"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </FrameLayout>
+
+</LinearLayout>

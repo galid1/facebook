@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- home_main.xml -->
+
+        <!-- 검색 바 -->
+        <dimen name="imageView_search_icon_width">38dp</dimen>
+        <dimen name="imageView_search_icon_height">40dp</dimen>
+        <dimen name="editText_search_width">333dp</dimen>
+        <dimen name="editText_search_height">41dp</dimen>
+
+    <!-- newsfeed_fragment.xml -->
+
+        <!-- 메뉴 바 -->
+        <dimen name="gridLayout_menubar_height">45dp</dimen>
+
+        <!-- 메뉴 아이콘 -->
+        <dimen name="imageView_menu_icon_width">40dp</dimen>
+        <dimen name="imageView_menu_icon_height">40dp</dimen>
+        <dimen name="imageView_menu_icon_marginLeft">30dp</dimen>
+        <dimen name="imageView_menu_icon_marginRight">30dp</dimen>
+        <dimen name="imageView_menu_icon_marginTop">4dp</dimen>
+
+        <!-- 글쓰기 영역 -->
+        <dimen name="frameLayout_writingArea_height">56dp</dimen>
+
+
+</resources>
