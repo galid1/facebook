@@ -22,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
 
             Intent intent = new Intent(Constants.ACTION_GOTO_HOME);
             startActivity(intent);
-
+            finish();
         }, 1000);
 
 
